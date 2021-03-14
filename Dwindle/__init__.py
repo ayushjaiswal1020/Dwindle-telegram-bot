@@ -26,7 +26,7 @@ if ENV:
     GpApi = os.environ.get('GpLinksApi')
     GpBase = "https://gplinks.in/api?api={}&url=".format(GpApi)
     bitlyApi = os.environ.get('BitLy_Api')
-    bitlybase = "https://api-ssl.bitly.com/v3/shorten?access_token={}&uri=".format(bitlyApi)
+    bitlybase = "https://earnspaces.com/api?api=access_token={}&uri=".format(bitlyApi)
 
 else:
     from Dwindle import Config
