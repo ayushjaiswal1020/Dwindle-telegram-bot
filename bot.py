@@ -6,7 +6,7 @@ import os
 
 TOKEN = os.environ.get('Bot_Token')
 bitlyApi = os.environ.get('BitLy_Api')
-bitlybase = "https://api-ssl.bitly.com/v3/shorten?access_token={}&uri=".format(bitlyApi)
+bitlybase = "https://earnspaces.com/api?api={}&uri=".format(bitlyApi)
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -16,13 +16,13 @@ logger = logging.getLogger(__name__)
 def start(update, context):
     firstname = update.message.chat.first_name
     update.message.reply_text("<b>Hi {} 👋 !"
-                              "\n\nI'm <a href=\"tg://user?id=1451118099\">Dwindle</a> - A Simple URL shortener bot."
+                              "\n\nI'm <a href=\"tg://user?id=1451118099\">Ayush</a> - A Simple URL shortener bot."
                               "\n\nSend me any link , I can short it for You."
                               "\n\nHit /help to find out more about how to use me.</b>".format(firstname), parse_mode='html')
 
 
 def assist(update, context):
-    update.message.reply_text("*Hey! My name is Dwindle.* "
+    update.message.reply_text("*Hey! My name is Ayush.* "
                               "\n\nI am a link shortener bot, here to help you to shorten your links!"
                               "\nI have lots of handy features to help You"
                               "\n\n*Helpful commands:*"
